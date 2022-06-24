@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=PT+Serif:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>AirAstana</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-main">
+                <div class="top-nav-grid">
+                    <div class="grid-item item-1">
+                        <!-- SHOULD BE SVG, BUT OK FOR NOW -->
+                        <a href="/"><img src="2560px-Air_Astana_logo.svg.png" alt="AirAstana Logo" width="150px"
+                                height="40px"></a>
+                    </div>
+                    <!-- DESKTOP -->
+                    <div class="grid-item item-2">
+                        <ul>
+                            <li class="nav-item"><a href="#">Book & Manage</a></li>
+                            <li class="nav-item"><a href="#">Information</a></li>
+                            <li class="nav-item"><a href="#">Nomad Club</a></li>
+                            <li class="nav-item"><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-item item-3">
+                        <ul>
+                            <li class="nav-icons"><a href="#"><i class="bi bi-search"></i></a></li>
+                            <li class="nav-icons"><a href="#"><i class="bi bi-globe2"></i></a></li>
+                            <li class="nav-icons"><a href="#"><i class="bi bi-person"></i></a></li>
+                            <li id="toggle" class="nav-icons mobile">
+                                <label class="nav-icons mobile" for="nav-toggle">&#9776;</label>
+                                <input id="nav-toggle" type="checkbox"></input>
+                                <!-- MOBILE -->
+                                <div class="nav-menu">
+                                    <section class="nav-menu-top">
+                                        <div class="top-wrapper">
+                                            <div class="search-box">
+                                                <div class="search-bar">
+                                                    <input type="text" name="search" id="search" placeholder="Search...">
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="/"><i class="bi bi-search"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="top-wrapper-icons">
+                                                <div class="main-icons main-icons-1">
+                                                    <a href="/">
+                                                        <img src="main-icon-1.png" alt="">
+                                                        Book Flight
+                                                    </a>
+                                                </div>
+                                                <div class="main-icons main-icons-2">
+                                                    <a href="/">
+                                                        <img src="main-icon-2.png" alt="">
+                                                        Online Check-in
+                                                    </a>
+                                                </div>
+                                                <div class="main-icons main-icons-3">
+                                                    <a href="/">
+                                                        <img src="main-icon-3.png" alt="">
+                                                        FAQ
+                                                    </a>
+                                                </div>
+                                                <div class="special-icons">
+                                                    <a href="#" class="special-1">
+                                                        <div class="special-box">
+                                                            <i class="bi bi-globe2"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="special-2">
+                                                        <div class="special-box">
+                                                            <i class="bi bi-person"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="nav-menu-main">
+                                        <div class="main-box">
+                                            <dl>
+                                                <dt>Book & Manage:</dt>
+                                                <a href="#">
+                                                    <dd>Book</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Manage</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Experience in Air Astana</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Air Astana Secure</dd>
+                                                </a>
+
+                                                <dt>Information:</dt>
+                                                <a href="#">
+                                                    <dd>Travel</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Airport</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Onboard</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Air Astana Secure</dd>
+                                                </a>
+
+                                                <dt>Nomad Club:</dt>
+                                                <a href="#">
+                                                    <dd>About Nomad Club</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Manage my account</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Business</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Join Nomad Club</dd>
+                                                </a>
+
+                                                <dt>About Us:</dt>
+                                                <a href="#">
+                                                    <dd>Overview</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Corporate Profile</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Corporate Governance</dd>
+                                                </a>
+                                                <a href="#">
+                                                    <dd>Contact Us</dd>
+                                                </a>
+                                            </dl>
+                                        </div>
+                                    </section>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </nav>
+        <section class="warning-message">
+            <a href="/">
+                <div class="warning-box">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    Latest updates on entry requirements to Kazakhstan and other countries.
+                </div>
+            </a>
+        </section>
+    </header>
+    <section class="hero-section">
+        <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="slide-1.jpg">
+                </div>
+                <a href="/">
+                    <div class="slide-text">
+                        <h2>Flights from Tashkent</h2>
+                        <h3>to Almaty and Nur-Sultan</h3>
+                    </div>
+                </a>
+                <div class="carousel-controls">
+                  <label for="img-4" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide-container">
+                <div class="slide-image">
+                    <img src="slide-2.jpg">
+                </div>
+                <a href="/">
+                    <div class="slide-text">
+                        <h2>Flights to Kazakhstan</h2>
+                        <h3>from Georgia</h3>
+                    </div>
+                </a>
+                <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide-container">
+                <div class="slide-image">
+                    <img src="slide-3.jpg">
+                </div>
+                <a href="/">
+                    <div class="slide-text">
+                        <h2>Enjoy Free Visa</h2>
+                        <h3>to Kazakhstan</h3>
+                    </div>
+                </a>
+                <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-4" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-4" />
+              <li class="slide-container">
+                <div class="slide-image">
+                    <img src="slide-4.jpg">
+                </div>
+                <a href="/">
+                    <div class="slide-text">
+                        <h2>Coronavirus</h2>
+                        <h3>See Latest Updates</h3>
+                    </div>
+                </a>
+                <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+              </div>
+            </ul>
+          </div>
+    </section>
+    <section class="main-block">
+        <div class="grid-block">
+            <div class="grid-block-item left-1">
+                <span>Tengri Online</span>
+                <h2>Read about Our New Destinations in the Tengri e-Magazine</h2>
+                <p>Enjoy the digital version of Tengri Magazine wherever you are in the world. Simply follow the link below.</p>
+                <a href="/" class="block-btn">Follow Now</a>
+            </div>
+            <div class="grid-block-item right-1">
+                <a href="/" class="block-img img-1"></a>
+            </div>
+            <div class="grid-block-item left-2">
+                <a href="/" class="block-img img-2"></a>
+            </div>
+            <div class="grid-block-item right-2">
+                <span>Onboarding Service</span>
+                <h2>The Latest News on Your Device</h2>
+                <p>Let’s make the world greener together! Get access to a wide variety of press in different languages and download e-magazines and e-newspapers to your personal devices.</p>
+                <a href="/" class="block-btn">Learn More</a>
+            </div>
+            <div class="grid-block-item left-3">
+                <span>Multi-City Booking</span>
+                <h2>Book Your Perfect Multi-Stop Itinerary</h2>
+                <p>Book your journey with up to 4 flight segments, enabling you to stop off en-route to your final destination. The search tool also enables you to include surface sectors in your journey.</p>
+                <a href="/" class="block-btn">Book Now</a>
+            </div>
+            <div class="grid-block-item right-3">
+                <a href="/" class="block-img img-3"></a>
+            </div>
+            <div class="grid-block-item left-4">
+                <a href="/" class="block-img img-4"></a>
+            </div>
+            <div class="grid-block-item right-4">
+                <span>Mobile Check-in</span>
+                <h2>Mobile Boarding Pass</h2>
+                <p>Сheck in for a flight with our mobile boarding pass via Air Astana app or on airastana.com, using a mobile device.</p>
+                <a href="/" class="block-btn">Read More</a>
+            </div>
+            <div class="grid-block-item left-5">
+                <span>Become a pilot with Air Astana</span>
+                <h2>Ab-Initio Programme</h2>
+                <p>Our cadets are trained in the best flight schools in Europe.</p>
+                <a href="/" class="block-btn">Learn More</a>
+            </div>
+            <div class="grid-block-item right-5">
+                <a href="/" class="block-img img-5"></a>
+            </div>
+        </div>
+    </section>
+    <section class="nomad">
+        <div class="grid-nomad">
+            <div class="grid-nomad-item">
+                <h2>Latest News:</h2>
+                <span>14.06.2022</span>
+                <a href="/"><p>Air Astana receives APEX Award</p></a>
+                <span>03.06.2022</span>
+                <a href="/"><p>Air Astana and Heraklion international airport celebrate the launch of flights between Kazakhstan and Greece</p></a>
+                <span>13.05.2022</span>
+                <a href="/"><p>Air Astana celebrates 20th Anniversary with outstanding financial results</p></a>
+                <span>13.05.2022</span>
+                <a href="/"><p>Air Astana takes delivery of eighth Airbus A321LR</p></a>
+                <span>13.05.2022</span>
+                <a href="/"><p>Air Astana launches flights from Almaty to London and Bodrum, Turkey</p></a>
+            </div>
+            <div class="grid-nomad-item right-nomad">
+                <div class="inner-nomad-item">
+                    <img src="nomad.jpg" alt="Nomad Image">
+                </div>
+                <div class="inner-nomad-item">
+                    <form action="/" method="POST">
+                        <h2>Nomad Club</h2>
+                        <label for="number">Membership Number:</label><br>
+                        <input type="tel" name="number" id="number" placeholder="Phone Number" required><br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" name="password" id="password" placeholder="Password" required><br>
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                        <label for="remember-me">Remember Me:</label><br>
+                        <input type="button" value="SIGN IN" class="sign-btn">
+                        <a href="/">Forgot Password</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="bottom-nav-grid">
+                <div class="grid-bottom bottom-1">
+                    <h4 class="footer-headings">Social</h4>
+                    <p>Follow us on social media for special offers and news from Air Astana.</p>
+                    <div class="bottom-inner-grid">
+                        <div class="inner-grid"><a href="/"><i class="bi bi-twitter"></i></a></div>
+                        <div class="inner-grid"><a href="/"><i class="bi bi-instagram"></i></a></div>
+                        <div class="inner-grid"><a href="/"><i class="bi bi-youtube"></i></a></div>
+                        <div class="inner-grid"><a href="/"><i class="bi bi-facebook"></i></a></div>
+                        <div class="inner-grid"><a href="/"><i class="bi bi-telegram"></i></a></div>
+                        <div class="inner-grid"><a href="/"><img src="vk.png" alt="" width="16px" height="16px"></a></div>
+                    </div>
+                </div>
+                <div class="grid-bottom bottom-2">
+                    <h4 class="footer-headings">Newsletter</h4>
+                    <div class="bottom-form-box">
+                        <label for="email-sub">Subscribe to our newsletter to get the latest news and offers from Air Astana.</label>
+                        <input type="email" name="email-sub" id="email-sub" placeholder="Enter email...">
+                        <input type="button" value="Subscribe" id="sub-btn">
+                    </div>
+                </div>
+                <div class="grid-bottom bottom-3">
+                    <h4 class="footer-headings">Quick-links</h4>
+                    <ul>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Air Astana Secure</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Contact Us</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Special Services</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Onboard</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Special Offers</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Cargo Services</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Careers</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Online Survey</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>For Travel Agents</a></li><br>
+                    </ul>
+                </div>
+                <div class="grid-bottom bottom-4">
+                    <h4 class="footer-headings">Top Destinations</h4>
+                    <ul>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Almaty</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Nur-Sultan</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Dubai</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Antalya</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Istanbul</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>London</a></li><br>
+                        <li class="bottom-list"><a href="/"><i class="bi bi-arrow-right"></i>Frankfurt</a></li><br>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="last">
+            <div class="bottom-text">
+                <a class="last-els-1" href="/">Terms and Conditions</a>
+                <a class="last-els-2" href="/">Privacy Policy</a>
+                <a class="last-els-3" href="/">© Copyright Air Astana JSC. All rights reserved.</a>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
